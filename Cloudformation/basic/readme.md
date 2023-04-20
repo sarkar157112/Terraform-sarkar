@@ -28,7 +28,7 @@ For each type of content, we can configure cache behaviors as follows:
 
 **Static content**:
 
-Query string forwarding: None, as static content doesn't rely on query strings.
+***Query string forwarding***: None, as static content doesn't rely on query strings.
 Cookies: None, as static content doesn't require personalization or user tracking.
 Headers: Only forward headers required for the proper functioning of static content, such as the 'Accept-Encoding' header for compression.
 
