@@ -21,9 +21,9 @@ When defining cache behaviors for different types of content, consider the facto
 
 ### Assume that the e-commerce website has the following types of content:
 
-Static content: CSS, JavaScript, images, and other static files that are the same for all users.
-Public dynamic content: Product listings, categories, and search results that change over time but are the same for all users.
-Private dynamic content: User-specific content such as shopping carts, account details, and personalized recommendations.
+1. Static content: CSS, JavaScript, images, and other static files that are the same for all users.
+2. Public dynamic content: Product listings, categories, and search results that change over time but are the same for all users.
+3. Private dynamic content: User-specific content such as shopping carts, account details, and personalized recommendations.
 For each type of content, we can configure cache behaviors as follows:
 
 **Static content**:
