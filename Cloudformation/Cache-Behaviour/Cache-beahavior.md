@@ -33,7 +33,7 @@ For each type of content, we can configure cache behaviors as follows:
 ***Headers***: Only forward headers required for the proper functioning of static content, such as the 'Accept-Encoding' header for compression.
 
 **Public dynamic content**:
-***Query string forwarding***: Whitelist specific query strings that affect caching, such as 'sort', 'filter', and 'search'. This allows CloudFront to cache content based on the values of these query strings.
+***Query string forwarding***: Whitelist specific query strings that affect caching, such as 'sort', 'filter', and 'search'. This allows CloudFront to cache content based on the values of these query strings. 
 ***Cookies***: None, as public dynamic content doesn't require personalization or user tracking.
 ***Headers***: Forward headers required for the proper functioning of public dynamic content, such as the 'Accept-Encoding' header for compression and any custom headers that your application requires.
 
