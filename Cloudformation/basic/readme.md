@@ -29,18 +29,19 @@ For each type of content, we can configure cache behaviors as follows:
 **Static content**:
 
 ***Query string forwarding***: None, as static content doesn't rely on query strings.
-Cookies: None, as static content doesn't require personalization or user tracking.
-Headers: Only forward headers required for the proper functioning of static content, such as the 'Accept-Encoding' header for compression.
+***Cookies***: None, as static content doesn't require personalization or user tracking.
+***Headers***: Only forward headers required for the proper functioning of static content, such as the 'Accept-Encoding' header for compression.
 
 **Public dynamic content**:
-Query string forwarding: Whitelist specific query strings that affect caching, such as 'sort', 'filter', and 'search'. This allows CloudFront to cache content based on the values of these query strings.
-Cookies: None, as public dynamic content doesn't require personalization or user tracking.
-Headers: Forward headers required for the proper functioning of public dynamic content, such as the 'Accept-Encoding' header for compression and any custom headers that your application requires.
+***Query string forwarding***: Whitelist specific query strings that affect caching, such as 'sort', 'filter', and 'search'. This allows CloudFront to cache content based on the values of these query strings.
+***Cookies***: None, as public dynamic content doesn't require personalization or user tracking.
+***Headers***: Forward headers required for the proper functioning of public dynamic content, such as the 'Accept-Encoding' header for compression and any custom headers that your application requires.
 
 **Private dynamic content**:
-Query string forwarding: All or a specific set of query strings, depending on your application's requirements.
-Cookies: Whitelist or forward all cookies to handle user-specific content such as authentication, personalization, and tracking.
-Headers: Forward headers required for the proper functioning of private dynamic content, such as the 'Accept-Encoding' header for compression, custom headers, and any headers required for user authentication or personalization.
+***Query string forwarding***: All or a specific set of query strings, depending on your application's requirements.
+***Cookies***: Whitelist or forward all cookies to handle user-specific content such as authentication, personalization, and tracking.
+***Headers***: Forward headers required for the proper functioning of private dynamic content, such as the 'Accept-Encoding' header for compression, custom headers, and any headers required for user authentication or personalization.
+
 By configuring cache behaviors for each type of content based on their requirements, the e-commerce website can optimize the delivery of static and public dynamic content to improve cache hit ratios and reduce latency. At the same time, it can handle user-specific private dynamic content without compromising on personalization or user experience.
 
-Remember that the exact cache behavior configuration will depend on your specific use case and application requirements, and you may need to fine-tune these settings to achieve the best balance between cache efficiency and content personalization.
+****Remember that the exact cache behavior configuration will depend on your specific use case and application requirements, and you may need to fine-tune these settings to achieve the best balance between cache efficiency and content personalization.****
